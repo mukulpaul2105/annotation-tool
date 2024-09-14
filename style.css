@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+:root {
+    --age-color: #ee4747;
+    --gender-color: #4543e0;
+    --place-color: #55f6a9;
+    --date-color: #ff6923;
+    --time-color: #ff00b3;
+}
+
+.body {
+    display: flex;
+}
+
+.left-side {
+    width: 25vw;
+    height: 100vh;
+    border-right: 1px solid #999;
+}
+
+/* Header Style */
+
+.header {
+    display: flex;
+    column-gap: 20px;
+    padding: 20px;
+    border-bottom: 1px solid #999;
+    width: 75vw;
+    height: fit-content;
+}
+
+.header .button {
+    background: #eee;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    height: fit-content;
+    font-size: 20px;
+}
+
+.header .button:hover {
+    background: #eee;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header .button p {
+    padding: 8px 12px;
+}
+
+.header .button div {
+    border-top-left-radius: 5px;    
+    border-bottom-left-radius: 5px;
+    width: 35px;
+    /* height: 100%;  */
+}
+
+#age div {
+    background: var(--age-color);
+}
+
+#gender div {
+    background: var(--gender-color);
+}
+
+#place div {
+    background: var(--place-color);
+}
+
+#date div {
+    background: var(--date-color);
+}
+
+#time div {
+    background: var(--time-color);
+}
+
+
+/* Content/Text Style */
+.content-container {
+    border-bottom: 1px solid #999;
+    width: 77vw;
+}
+
+.content-wrapper {
+    /* width: 100%; */
+    padding: 30px 16px;
+}
+
+#paragraph{
+    font-size: 30px;
+    word-spacing: 10px;
+    line-height: 50px;
+    color: #444;
+}
+
+/* Selected Items Style */
+
+.selected-item-wrapper {
+    background-color: #999;
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+
+.selected-item-type-icon {
+    background-color: #fff;
+    font-size: 25px;
+    line-height: 25px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.selected-item-type-icon .icon {
+    font-size: 14px;
+}
+
+.selected-age {
+    background-color: var(--age-color);
+}
+
+.selected-place {
+    background-color: var(--place-color);
+}
+
+.selected-date {
+    background-color: var(--date-color);
+}
+
+.selected-time {
+    background-color: var(--time-color);
+}
+.selected-gender {
+    background-color: var(--gender-color);
+}
+
